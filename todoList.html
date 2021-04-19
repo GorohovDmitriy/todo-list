@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="todoList.css">
+	<title> Todo List</title>
+</head>
+<body>
+	<div class="todo">
+		<div id="myDIV" class="header">
+			<h2 class="title">Список задач</h2>
+			<input type="text" id="myInput" placeholder="Название...">
+			<span onclick="newElement()" class="addBtn">Добавить</span>
+		</div>
+		<ul id="myUL" >
+			<li>Выучить HTML</li>
+			<li class="checked">Выучить CSS</li>
+			<li>Выучить Js</li>
+			<li>Пройти курс Js</li>
+			<li>Ознакомиться с React</li>
+			<li>Путь самурая №1</li>
+		</ul>
+	</div>
+	
+	
+
+		<script src="todoList.js"></script>
+</body>
+</html>

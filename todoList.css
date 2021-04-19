@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+body {
+	max-width: 500px;
+	margin: auto;
+}
+.todo {
+	border: 2px solid black;
+	box-shadow: 0px 5px 10px 5px #555;
+}
+ul li {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #a7a1a1; /* ЦВЕТ СПИСКА */
+	font-size: 18px;
+	transition: 0.2s;
+	color: black;
+	user-select: none;
+	list-style: none;
+}
+ul li:hover {
+	background: rgba(10, 10, 10, 0.658);
+}
+/* При нажатии на кнопку, добавить цвет фона и вычеркнуть текст */
+ul li.checked {
+	color: #d9d9d9;
+}
+ul li.checked::before {
+	content: '';
+	position: absolute;
+	border-color:#d9d9d9;
+	
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+}
+.header {
+	background-color: #a7a1a1;
+	padding: 5px;
+	color:black;
+	text-align: center;
+	
+	border-bottom: 2px solid black;
+}
+.header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+input {
+	margin-left: 30px;
+	border-radius: 15px;
+	border-color: black;
+	width: 50%;
+	padding: 10px;
+	font-size: 16px;
+	float: left;
+	transition: 1s;
+	background-color: cornsilk;
+}
+input:focus {
+	width: 60%;
+}
+.addBtn {
+	padding: 10px;
+	width: 30%;
+	background: #d9d9d9;
+	float: right;
+	color: #555;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.5s;
+	border: none;
+   border-radius: 15px;
+   box-shadow: 0 5px rgb(73, 73, 73);
+}
+
+.addBtn:hover {
+	background-color: rgba(247, 247, 247, 0.412);
+}
+.addBtn:active {
+	background-color: rgba(247, 247, 247, 0.412);
+	box-shadow: 0 2px rgba(102, 102, 102, 0.433);
+	transform: translateY(4px);
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+	transition: 1s;
+}
+.close:hover {
+	transform: rotate(360deg);
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
